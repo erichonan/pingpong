@@ -1,0 +1,4 @@
+pingpong
+========
+
+A quick challenge
