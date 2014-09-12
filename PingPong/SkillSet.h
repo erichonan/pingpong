@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Shot.h"
 
-@interface Skill : NSObject
+@interface SkillSet : NSObject
 
-@property (strong, nonatomic) NSDictionary *shot;
+@property (strong, nonatomic) NSArray *shotProbabilities;
 @property (strong, nonatomic) NSDictionary *returnability;
 
 @property int receiveFlat;
@@ -26,7 +26,7 @@
 
 /*-(Skill *)initWithDefaults;
 -(Skill *)initWithJSON:JSON;*/
--(Skill *)initWithSkillsReceiveFlat:(int)rFlat
+-(SkillSet *)initWithSkillsReceiveFlat:(int)rFlat
                        receiveSlice:(int)rSlice
                      receiveTopSpin:(int)rTSpin
                 receiveUnreturnable:(int)rUnreturn

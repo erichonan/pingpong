@@ -33,8 +33,15 @@
             [self setServers];
         }
         
+        if(server == receiver)
+        {
+            NSLog(@"server == receiver - toggle server doesn't serve to himself");
+            [self togglePlayer];
+        }
+        
         volleyInProgress = TRUE;
         Shot *shot = [server serve];
+        opponent = server;
         
         NSLog(@"%@ serves the ball.", server.playerName);
         while (volleyInProgress) {
@@ -45,6 +52,7 @@
             if (shotReturned) {                                     //pick return shot based on probabilities
                 //NSLog(@"%@ returning shot!!", self.receiver.playerName);
                 shot = [receiver volley];
+                [self togglePlayer];      //toggle to receiving player
             }
             else                                                    //else turn ends and point awarded
             {
@@ -52,8 +60,6 @@
                 [opponent scorePoint];
                 NSLog(@"%@: %i, %@: %i", player1.playerName, player1.score, player2.playerName, player2.score);
             }
-            
-            [self togglePlayer];      //toggle to receiving player
         }
         
         if (self.player1.score > 20 || self.player2.score > 20) {

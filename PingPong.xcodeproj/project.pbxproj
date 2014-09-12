@@ -24,7 +24,7 @@
 		B232D4E419C1EB380065F19C /* PingPongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B232D4E319C1EB380065F19C /* PingPongTests.m */; };
 		B232D4EF19C1EB900065F19C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = B232D4EE19C1EB900065F19C /* Game.m */; };
 		B232D4F219C1EC8E0065F19C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B232D4F119C1EC8E0065F19C /* Player.m */; };
-		B232D4F519C2008F0065F19C /* Skill.m in Sources */ = {isa = PBXBuildFile; fileRef = B232D4F419C2008F0065F19C /* Skill.m */; };
+		B232D4F519C2008F0065F19C /* SkillSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B232D4F419C2008F0065F19C /* SkillSet.m */; };
 		B232D4F819C2061B0065F19C /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = B232D4F719C2061B0065F19C /* Shot.m */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +63,8 @@
 		B232D4EE19C1EB900065F19C /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		B232D4F019C1EC8E0065F19C /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		B232D4F119C1EC8E0065F19C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		B232D4F319C2008F0065F19C /* Skill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skill.h; sourceTree = "<group>"; };
-		B232D4F419C2008F0065F19C /* Skill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skill.m; sourceTree = "<group>"; };
+		B232D4F319C2008F0065F19C /* SkillSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillSet.h; sourceTree = "<group>"; };
+		B232D4F419C2008F0065F19C /* SkillSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillSet.m; sourceTree = "<group>"; };
 		B232D4F619C2061B0065F19C /* Shot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
 		B232D4F719C2061B0065F19C /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,8 +136,8 @@
 				B232D4F119C1EC8E0065F19C /* Player.m */,
 				B232D4ED19C1EB900065F19C /* Game.h */,
 				B232D4EE19C1EB900065F19C /* Game.m */,
-				B232D4F319C2008F0065F19C /* Skill.h */,
-				B232D4F419C2008F0065F19C /* Skill.m */,
+				B232D4F319C2008F0065F19C /* SkillSet.h */,
+				B232D4F419C2008F0065F19C /* SkillSet.m */,
 				B232D4F619C2061B0065F19C /* Shot.h */,
 				B232D4F719C2061B0065F19C /* Shot.m */,
 				B232D4D019C1EB380065F19C /* Images.xcassets */,
@@ -276,7 +276,7 @@
 				B232D4CF19C1EB380065F19C /* ViewController.m in Sources */,
 				B232D4C619C1EB380065F19C /* AppDelegate.m in Sources */,
 				B232D4C219C1EB380065F19C /* main.m in Sources */,
-				B232D4F519C2008F0065F19C /* Skill.m in Sources */,
+				B232D4F519C2008F0065F19C /* SkillSet.m in Sources */,
 				B232D4F819C2061B0065F19C /* Shot.m in Sources */,
 				B232D4EF19C1EB900065F19C /* Game.m in Sources */,
 				B232D4F219C1EC8E0065F19C /* Player.m in Sources */,
@@ -498,6 +498,7 @@
 				B232D4E919C1EB380065F19C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B232D4EA19C1EB380065F19C /* Build configuration list for PBXNativeTarget "PingPongTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +507,7 @@
 				B232D4EC19C1EB380065F19C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
