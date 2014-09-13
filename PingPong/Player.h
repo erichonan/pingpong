@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Skill.h"
+#import "SkillSet.h"
 #import "Shot.h"
 
-@class Skill;
+@class SkillSet;
 @class Shot;
 
 @interface Player : NSObject
 
 @property (strong, nonatomic) NSString *playerName;
-@property (strong, nonatomic) Skill *skill;
+@property (strong, nonatomic) SkillSet *skill;
 @property int score;
 
 -(Shot *)serve;

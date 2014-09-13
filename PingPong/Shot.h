@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Player.h"
-#import "Skill.h"
+#import "SkillSet.h"
 
-@class Skill;
+@class SkillSet;
 
 @interface Shot : NSObject
 
@@ -18,7 +18,9 @@
 @property (strong, nonatomic) NSString *type;
 @property int index;
 
--(Shot *)initWithSkill:(Skill *)skill;
--(Shot *) getShot:(Skill *) playerSkill;
+-(Shot *)initWithSkill:(SkillSet *)skill;
+-(Shot *) getShot:(SkillSet *) playerSkill;
+-(BOOL) returnWithSkill: (SkillSet *)playerSkill;
+
 
 @end

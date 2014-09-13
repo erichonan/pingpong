@@ -21,33 +21,10 @@
 
 -(BOOL) receiveShot: (Shot *)shot
 {
-    if (shot.index > 50) {
-        NSLog(@"%@ returned the shot", self.playerName);
-        return TRUE;
-    }
-/*
-    BOOL returned = YES;
-    switch(shot.type)
-    {
-        case @"flat":
-            // calculate if shot returned
-            break;
-            
-        case @"slice":
-            // calculate if shot returned
-            break;
-
-        case @"topSpin":
-            // calculate if shot returned
-            break;
-        default:
-            
-    }
-    */
+    BOOL reception = [shot returnWithSkill: self.skill];
     
     //NSLog(@"not returning by default");
-    NSLog(@"%@ was unable to return the ball", self.playerName);
-    return FALSE;
+    return reception;
 }
 
 -(Shot *) volley
