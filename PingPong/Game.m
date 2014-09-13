@@ -33,6 +33,11 @@
             [self setServers];
         }
         
+        if(server == opponent)
+        {
+            NSLog(@"resetting opponent so server does not serve to himself");
+            [self togglePlayer];
+        }
         volleyInProgress = TRUE;
         Shot *shot = [server serve];
         
